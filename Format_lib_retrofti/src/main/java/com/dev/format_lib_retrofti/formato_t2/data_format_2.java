@@ -57,6 +57,9 @@ public class data_format_2 {
         }
         return headers;
     }
+
+
+
     public List<Map<String, Object>> contentlist(String targetKey) {
         List<Map<String, Object>> content = new ArrayList<>();
         Object dataObject = response.get("data");
@@ -74,6 +77,14 @@ public class data_format_2 {
         }
         return content;
     }
+
+
+
+
+
+
+
+
 
     public void setResponse(Map<String, Object> response) {
         this.response = response;

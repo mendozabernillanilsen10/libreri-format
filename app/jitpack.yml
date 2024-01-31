@@ -1,0 +1,8 @@
+# configuration file for building snapshots and releases with jitpack.io
+jdk:
+  - openjdk17
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - FILE="-Dfile=Format_lib_retrofti-release.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.mendozabernillanilsen10 -DartifactId=GIT_REPO_NAME -Dversion=VERSION -Dpackaging=aar -DgeneratePom=true
