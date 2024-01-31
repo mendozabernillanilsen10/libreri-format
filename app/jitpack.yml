@@ -5,4 +5,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=Format_lib_retrofti-release.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.mendozabernillanilsen10 -DartifactId=GIT_REPO_NAME -Dversion=VERSION -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.mendozabernillanilsen10 -DartifactId=libreri-format -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
